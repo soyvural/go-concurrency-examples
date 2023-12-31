@@ -25,8 +25,8 @@ cd go-concurrency
 
 Then, navigate to the individual packages to see the examples and exercises.
 
-Contributing
+## Contributing
 If you are interested in contributing to this repository, it is more than welcome for me. If you have a topic you'd like to add or an example you think would be beneficial, please open a pull request with unit tests.
 
-License
+## License
 This project is licensed under the MIT License. See the LICENSE file for details.
