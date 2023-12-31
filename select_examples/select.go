@@ -47,6 +47,8 @@ func (r *receiver) receive(c chan string, stop, stopped chan struct{}) {
 	}
 }
 
+// drain drains the messages in the channel
+// always think draining remaning tasks, messsages when to process is about stop in asynchronous programming
 func (r *receiver) drain(c chan string) {
 	for {
 		select {

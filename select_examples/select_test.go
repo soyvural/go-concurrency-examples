@@ -8,7 +8,7 @@ import (
 	"github.com/google/go-cmp/cmp"
 )
 
-func TestMessageReaderAndWriterN(t *testing.T) {
+func TestReceive(t *testing.T) {
 	tests := []struct {
 		desc string
 		n    int
