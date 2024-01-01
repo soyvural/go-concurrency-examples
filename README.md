@@ -12,7 +12,9 @@ This repository is dedicated to providing training materials and examples for un
    
 4. [Context](./context_examples): This package provides examples of using context. 
 
-5. [Pool](./pool_examples): This package provides examples of using pool. It is used to limit the number of goroutines that can run concurrently.
+5. [Cond](.cond_examples): This package provides examples of using cond. Wait, and Broadcast methods are used to synchronize execution across goroutines.
+
+6. [Pool](./pool_examples): This package provides examples of using pool. It is used to limit the number of goroutines that can run concurrently.
 
 ## Getting Started
 
