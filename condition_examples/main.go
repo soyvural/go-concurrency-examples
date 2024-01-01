@@ -28,7 +28,7 @@ func waitForResource(id int, cond *sync.Cond, resourceCounter *atomic.Int32, wg 
 func increaseResource(cond *sync.Cond, resourceCounter *atomic.Int32) {
 	cond.L.Lock()
 	defer cond.L.Unlock()
-	for i := 0; i < 11; i++ {
+	for i := 0; i < resourceLimit; i++ {
 		if resourceCounter.Add(1) == resourceLimit {
 			cond.Broadcast()
 			fmt.Printf("resourceCounter is %d, broadcast.\n", resourceCounter.Load())
